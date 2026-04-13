@@ -80,5 +80,5 @@ curl -X POST http://localhost:8080/api/v1/sensors
 ## Author
 - **Name:** Balasooriya Mudiyanselage Vinuji Jayandee Balasooriya  
 - **Student ID:** w2120101 (IIT Id - 20240746)  
-- **Module:** 5COSC022W Client-Server Architectures  
+- **Module:** 5COSC022C.2 Client-Server Architectures  
 - **University:** University of Westminster
