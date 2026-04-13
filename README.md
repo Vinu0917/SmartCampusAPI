@@ -3,7 +3,7 @@
 ## Overview
 
 This is a RESTful API built for the University of Westminster 
-5COSC022W Client-Server Architectures coursework. It manages 
+5COSC022C.2 Client-Server Architectures coursework. It manages 
 Rooms and Sensors across a university campus.
 
 Built using JAX-RS (Jersey) on an embedded Grizzly HTTP server. 
