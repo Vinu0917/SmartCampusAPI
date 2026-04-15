@@ -70,13 +70,14 @@ curl -X POST http://localhost:8080/api/v1/sensors/TEMP-001/readings
 curl -X DELETE http://localhost:8080/api/v1/rooms/LIB-301
 
 ### 7. Create sensor with invalid roomId (returns 422)
-curl -X POST http://localhost:8080/api/v1/sensorsPost reading to maintenance sensor (returns 403)  
+curl -X POST __http://localhost:8080/api/v1/sensors 
 -H "Content-Type: application/json" 
--d '{"id":"TEMP-999","type":"Temperature","status":"ACTIVE",
-"currentValue":0,"roomId":"FAKE-ROOM"}'
+-d '{"id":"TEMP-999","type":"Temperature","status":"ACTIVE", "currentValue":0,"roomId":"FAKE-ROOM"}'
 
 ### 8. Post reading to maintenance sensor (returns 403)
-curl -X POST http://localhost:8080/api/v1/sensors/CO2-002/readings -H "Content-Type: application/json" -d '{"value": 450.0}'
+curl -X POST http://localhost:8080/api/v1/sensors/CO2-002/readings 
+-H "Content-Type: application/json" 
+-d '{"value": 450.0}'
 
 ---
 
