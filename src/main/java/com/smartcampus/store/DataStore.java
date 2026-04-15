@@ -32,14 +32,19 @@ public class DataStore {
 
         Sensor s1 = new Sensor("TEMP-001", "Temperature", "ACTIVE", 21.5, "LIB-301");
         Sensor s2 = new Sensor("CO2-001", "CO2", "ACTIVE", 400.0, "LAB-101");
+        //maintenance sensor for testing 403
+        Sensor s3 = new Sensor("CO2-002", "CO2", "MAINTENANCE", 0.0, "LIB-301");
         sensors.put(s1.getId(), s1);
         sensors.put(s2.getId(), s2);
+        sensors.put(s3.getId(), s3);
 
         r1.getSensorIds().add(s1.getId());
+        r1.getSensorIds().add(s3.getId());
         r2.getSensorIds().add(s2.getId());
 
         readings.put(s1.getId(), new ArrayList<>());
         readings.put(s2.getId(), new ArrayList<>());
+        readings.put(s3.getId(), new ArrayList<>());
     }
 
     public static DataStore getInstance() {
